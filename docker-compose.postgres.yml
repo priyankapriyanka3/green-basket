@@ -1,0 +1,43 @@
+version: '3.8'
+
+# Override for PostgreSQL deployment
+# Usage: docker compose -f docker-compose.yml -f docker-compose.postgres.yml up
+
+services:
+  database:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: greenbasket
+      POSTGRES_USER: greenbasket
+      POSTGRES_PASSWORD: greenbasket_dev_password
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U greenbasket"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      args:
+        # Install PostgreSQL dependencies
+        INSTALL_SPEC: ".[postgres]"
+    environment:
+      # PostgreSQL connection string
+      DATABASE_URL: postgresql+psycopg://greenbasket:greenbasket_dev_password@database:5432/greenbasket
+      JWT_SECRET: dev-secret-change-in-production
+      JWT_EXPIRY_SECONDS: "3600"
+    depends_on:
+      database:
+        condition: service_healthy
+    # Remove SQLite volume when using PostgreSQL
+    volumes: []
+
+volumes:
+  postgres-data:
+    driver: local

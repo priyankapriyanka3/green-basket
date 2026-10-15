@@ -1,0 +1,67 @@
+{
+  "status": "failed",
+  "target_path": "/repos/green-basket/frontend",
+  "requested_linters": [
+    "all"
+  ],
+  "applicable_linters": [
+    "biome",
+    "djlint"
+  ],
+  "selected_linters": [
+    "biome",
+    "djlint"
+  ],
+  "message": "All findings, including any findings omitted from the inline response, are available in the report files listed under `report_paths`.",
+  "summary": {
+    "errors": 1,
+    "warnings": 0,
+    "total_findings": 1,
+    "inline_findings": 1,
+    "remaining_findings": 0,
+    "linters_run": 2,
+    "linters_with_issues": 1,
+    "linters_unavailable": 0
+  },
+  "by_tool": {
+    "biome": {
+      "status": "failed",
+      "errors": 0,
+      "warnings": 0,
+      "total_findings": 0,
+      "inline_findings": 0,
+      "remaining_findings": 0,
+      "files": [],
+      "report_path": "/repos/green-basket/frontend/.quality/lint/biome-result.json",
+      "reason": "npm error npx canceled due to missing packages and no YES option: [\"@biomejs/biome@2.5.15\"]\nnpm error A complete log of this run can be found in: /home/appuser/.npm/_logs/2026-10-15T14_08_39_223Z-debug-0.log"
+    },
+    "djlint": {
+      "status": "issues_found",
+      "errors": 1,
+      "warnings": 0,
+      "total_findings": 1,
+      "inline_findings": 1,
+      "remaining_findings": 0,
+      "files": [
+        {
+          "path": "/repos/green-basket/frontend/index.html",
+          "findings": [
+            {
+              "msg": "Consider adding a meta description. <html lang=\"en\"> <",
+              "line": 2,
+              "column": 0,
+              "code": "H030"
+            }
+          ]
+        }
+      ],
+      "report_path": "/repos/green-basket/frontend/.quality/lint/djlint-result.json"
+    }
+  },
+  "report_dir": "/repos/green-basket/frontend/.quality/lint",
+  "report_paths": {
+    "summary": "/repos/green-basket/frontend/.quality/lint/summary.json",
+    "biome": "/repos/green-basket/frontend/.quality/lint/biome-result.json",
+    "djlint": "/repos/green-basket/frontend/.quality/lint/djlint-result.json"
+  }
+}

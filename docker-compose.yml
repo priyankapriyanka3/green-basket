@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      args:
+        INSTALL_SPEC: .
+    env_file:
+      - ./backend/dev.env
+    environment:
+      # Override DATABASE_URL for container environment
+      DATABASE_URL: sqlite:////data/app.db
+    volumes:
+      # Named volume for SQLite database persistence
+      - app-data:/data
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/app/bootstrap?includeOps=false"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    x-preview-port: 8000
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        BACKEND_HOST: backend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    # Preview port annotation for deployment environments
+    x-preview-port: 80
+
+volumes:
+  # Named volume for SQLite database persistence
+  app-data:
+    driver: local
