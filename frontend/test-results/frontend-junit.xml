@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="90" failures="0" errors="0" time="4.768771784">
+    <testsuite name="src/__pipeline_smoke__/import_resolution.smoke.test.tsx" timestamp="2026-10-15T16:11:45.315Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="10" failures="0" errors="0" skipped="0" time="0.25114507">
+        <testcase classname="src/__pipeline_smoke__/import_resolution.smoke.test.tsx" name="pipeline: route modules resolve &gt; resolves pages/AdminDashboard.tsx" time="0.109262736">
+        </testcase>
+        <testcase classname="src/__pipeline_smoke__/import_resolution.smoke.test.tsx" name="pipeline: route modules resolve &gt; resolves pages/Cart.tsx" time="0.109480947">
+        </testcase>
+        <testcase classname="src/__pipeline_smoke__/import_resolution.smoke.test.tsx" name="pipeline: route modules resolve &gt; resolves pages/CategorySearch.tsx" time="0.006939113">
+        </testcase>
+        <testcase classname="src/__pipeline_smoke__/import_resolution.smoke.test.tsx" name="pipeline: route modules resolve &gt; resolves pages/Checkout.tsx" time="0.003671795">
+        </testcase>
+        <testcase classname="src/__pipeline_smoke__/import_resolution.smoke.test.tsx" name="pipeline: route modules resolve &gt; resolves pages/Home.tsx" time="0.003921422">
+        </testcase>
+        <testcase classname="src/__pipeline_smoke__/import_resolution.smoke.test.tsx" name="pipeline: route modules resolve &gt; resolves pages/OnboardingLogin.tsx" time="0.001673113">
+        </testcase>
+        <testcase classname="src/__pipeline_smoke__/import_resolution.smoke.test.tsx" name="pipeline: route modules resolve &gt; resolves pages/OrderTracking.tsx" time="0.003180843">
+        </testcase>
+        <testcase classname="src/__pipeline_smoke__/import_resolution.smoke.test.tsx" name="pipeline: route modules resolve &gt; resolves pages/ProductDetail.tsx" time="0.003613708">
+        </testcase>
+        <testcase classname="src/__pipeline_smoke__/import_resolution.smoke.test.tsx" name="pipeline: route modules resolve &gt; resolves pages/ProfileNotifications.tsx" time="0.003526425">
+        </testcase>
+        <testcase classname="src/__pipeline_smoke__/import_resolution.smoke.test.tsx" name="pipeline: route modules resolve &gt; resolves pages/ShoppingLists.tsx" time="0.003062142">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/api/client.test.ts" timestamp="2026-10-15T16:11:45.317Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="8" failures="0" errors="0" skipped="0" time="0.006638185">
+        <testcase classname="src/__tests__/api/client.test.ts" name="tokenManager &gt; getToken &gt; returns null when no token exists" time="0.001595673">
+        </testcase>
+        <testcase classname="src/__tests__/api/client.test.ts" name="tokenManager &gt; getToken &gt; returns token when it exists" time="0.000642854">
+        </testcase>
+        <testcase classname="src/__tests__/api/client.test.ts" name="tokenManager &gt; setToken &gt; stores token in localStorage" time="0.00032318">
+        </testcase>
+        <testcase classname="src/__tests__/api/client.test.ts" name="tokenManager &gt; removeToken &gt; removes token from localStorage" time="0.000405007">
+        </testcase>
+        <testcase classname="src/__tests__/api/client.test.ts" name="tokenManager &gt; isTokenExpired &gt; returns true when no token exists" time="0.000234683">
+        </testcase>
+        <testcase classname="src/__tests__/api/client.test.ts" name="tokenManager &gt; isTokenExpired &gt; returns true for expired token" time="0.000233439">
+        </testcase>
+        <testcase classname="src/__tests__/api/client.test.ts" name="tokenManager &gt; isTokenExpired &gt; returns false for valid token" time="0.000206621">
+        </testcase>
+        <testcase classname="src/__tests__/api/client.test.ts" name="tokenManager &gt; isTokenExpired &gt; returns true for malformed token" time="0.000204684">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/components/ErrorBoundary.test.tsx" timestamp="2026-10-15T16:11:45.319Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="4" failures="0" errors="0" skipped="0" time="0.117699085">
+        <testcase classname="src/__tests__/components/ErrorBoundary.test.tsx" name="ErrorBoundary &gt; renders children when there is no error" time="0.022295807">
+        </testcase>
+        <testcase classname="src/__tests__/components/ErrorBoundary.test.tsx" name="ErrorBoundary &gt; catches errors and displays fallback UI" time="0.076387638">
+        </testcase>
+        <testcase classname="src/__tests__/components/ErrorBoundary.test.tsx" name="ErrorBoundary &gt; displays error details when expanded" time="0.007608294">
+        </testcase>
+        <testcase classname="src/__tests__/components/ErrorBoundary.test.tsx" name="ErrorBoundary &gt; renders Return to Home button" time="0.007976523">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/components/FreshnessChip.test.tsx" timestamp="2026-10-15T16:11:45.319Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="4" failures="0" errors="0" skipped="0" time="0.101417018">
+        <testcase classname="src/__tests__/components/FreshnessChip.test.tsx" name="FreshnessChip &gt; renders fresh type chip with correct styling" time="0.042575429">
+        </testcase>
+        <testcase classname="src/__tests__/components/FreshnessChip.test.tsx" name="FreshnessChip &gt; renders warning type chip with correct styling" time="0.004126709">
+        </testcase>
+        <testcase classname="src/__tests__/components/FreshnessChip.test.tsx" name="FreshnessChip &gt; renders unavailable type chip with correct styling" time="0.003306029">
+        </testcase>
+        <testcase classname="src/__tests__/components/FreshnessChip.test.tsx" name="FreshnessChip &gt; applies minimum touch target height" time="0.048105931">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/components/ProtectedRoute.test.tsx" timestamp="2026-10-15T16:11:45.320Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="5" failures="0" errors="0" skipped="0" time="0.057620573">
+        <testcase classname="src/__tests__/components/ProtectedRoute.test.tsx" name="ProtectedRoute &gt; shows loading state when checking authentication" time="0.026592193">
+        </testcase>
+        <testcase classname="src/__tests__/components/ProtectedRoute.test.tsx" name="ProtectedRoute &gt; redirects to login when not authenticated" time="0.00659224">
+        </testcase>
+        <testcase classname="src/__tests__/components/ProtectedRoute.test.tsx" name="ProtectedRoute &gt; renders children when authenticated as shopper" time="0.002421537">
+        </testcase>
+        <testcase classname="src/__tests__/components/ProtectedRoute.test.tsx" name="ProtectedRoute &gt; shows 403 error when shopper tries to access operator-only route" time="0.017070046">
+        </testcase>
+        <testcase classname="src/__tests__/components/ProtectedRoute.test.tsx" name="ProtectedRoute &gt; renders children when operator accesses operator-only route" time="0.002031978">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/components/StatusBadge.test.tsx" timestamp="2026-10-15T16:11:45.320Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="4" failures="0" errors="0" skipped="0" time="0.109331498">
+        <testcase classname="src/__tests__/components/StatusBadge.test.tsx" name="StatusBadge &gt; renders confirmed status with green styling" time="0.091641645">
+        </testcase>
+        <testcase classname="src/__tests__/components/StatusBadge.test.tsx" name="StatusBadge &gt; renders out_for_delivery status with blue styling" time="0.005092773">
+        </testcase>
+        <testcase classname="src/__tests__/components/StatusBadge.test.tsx" name="StatusBadge &gt; renders cancelled status with grey styling" time="0.006414617">
+        </testcase>
+        <testcase classname="src/__tests__/components/StatusBadge.test.tsx" name="StatusBadge &gt; renders payment_pending status with marigold styling" time="0.003766265">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/components/WarningBanner.test.tsx" timestamp="2026-10-15T16:11:45.321Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="4" failures="0" errors="0" skipped="0" time="0.116574636">
+        <testcase classname="src/__tests__/components/WarningBanner.test.tsx" name="WarningBanner &gt; renders warning type with marigold background" time="0.095947204">
+        </testcase>
+        <testcase classname="src/__tests__/components/WarningBanner.test.tsx" name="WarningBanner &gt; renders error type with red background" time="0.006877184">
+        </testcase>
+        <testcase classname="src/__tests__/components/WarningBanner.test.tsx" name="WarningBanner &gt; renders info type with blue background" time="0.006604634">
+        </testcase>
+        <testcase classname="src/__tests__/components/WarningBanner.test.tsx" name="WarningBanner &gt; renders success type with green background" time="0.004338617">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/pages/AdminDashboard.test.tsx" timestamp="2026-10-15T16:11:45.322Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="5" failures="0" errors="0" skipped="0" time="0.173814045">
+        <testcase classname="src/__tests__/pages/AdminDashboard.test.tsx" name="AdminDashboard &gt; renders operations overview heading for operator" time="0.11956437">
+        </testcase>
+        <testcase classname="src/__tests__/pages/AdminDashboard.test.tsx" name="AdminDashboard &gt; renders KPI cards or 403 message" time="0.011829545">
+        </testcase>
+        <testcase classname="src/__tests__/pages/AdminDashboard.test.tsx" name="AdminDashboard &gt; displays appropriate content based on user role" time="0.021529208">
+        </testcase>
+        <testcase classname="src/__tests__/pages/AdminDashboard.test.tsx" name="AdminDashboard &gt; renders header navigation" time="0.011227018">
+        </testcase>
+        <testcase classname="src/__tests__/pages/AdminDashboard.test.tsx" name="AdminDashboard &gt; renders footer with delivery zones" time="0.006958165">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/pages/Cart.test.tsx" timestamp="2026-10-15T16:11:45.323Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="5" failures="0" errors="0" skipped="0" time="0.343511477">
+        <testcase classname="src/__tests__/pages/Cart.test.tsx" name="Cart &gt; renders cart heading" time="0.101566523">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Cart.test.tsx" name="Cart &gt; displays cart items table" time="0.04533367">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Cart.test.tsx" name="Cart &gt; displays order summary with pricing breakdown" time="0.073984503">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Cart.test.tsx" name="Cart &gt; displays loyalty points redemption controls" time="0.082289954">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Cart.test.tsx" name="Cart &gt; displays checkout button" time="0.037755566">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/pages/Checkout.test.tsx" timestamp="2026-10-15T16:11:45.324Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="6" failures="0" errors="0" skipped="0" time="0.339458102">
+        <testcase classname="src/__tests__/pages/Checkout.test.tsx" name="Checkout &gt; renders checkout heading" time="0.106936823">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Checkout.test.tsx" name="Checkout &gt; displays checkout progress steps" time="0.035856544">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Checkout.test.tsx" name="Checkout &gt; displays address selection with serviceable addresses" time="0.066871567">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Checkout.test.tsx" name="Checkout &gt; displays delivery slot selection" time="0.029813284">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Checkout.test.tsx" name="Checkout &gt; displays payment method selection" time="0.072470666">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Checkout.test.tsx" name="Checkout &gt; displays order summary sidebar" time="0.023822399">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/pages/Home.test.tsx" timestamp="2026-10-15T16:11:45.325Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="8" failures="0" errors="0" skipped="0" time="0.603271536">
+        <testcase classname="src/__tests__/pages/Home.test.tsx" name="Home &gt; renders greeting with customer name" time="0.154097913">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Home.test.tsx" name="Home &gt; displays loyalty points in header" time="0.041302128">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Home.test.tsx" name="Home &gt; shows reorder prompt section" time="0.065942701">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Home.test.tsx" name="Home &gt; displays recommendations section with AI badge" time="0.092173228">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Home.test.tsx" name="Home &gt; shows featured categories" time="0.03188729">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Home.test.tsx" name="Home &gt; renders shopping lists section" time="0.072976541">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Home.test.tsx" name="Home &gt; has proper navigation links" time="0.030181234">
+        </testcase>
+        <testcase classname="src/__tests__/pages/Home.test.tsx" name="Home &gt; maintains wireframe color scheme" time="0.111802558">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/pages/OnboardingLogin.test.tsx" timestamp="2026-10-15T16:11:45.326Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="6" failures="0" errors="0" skipped="0" time="0.341936178">
+        <testcase classname="src/__tests__/pages/OnboardingLogin.test.tsx" name="OnboardingLogin &gt; renders login form with all required fields" time="0.146609615">
+        </testcase>
+        <testcase classname="src/__tests__/pages/OnboardingLogin.test.tsx" name="OnboardingLogin &gt; pre-fills phone number and password with demo credentials" time="0.018345647">
+        </testcase>
+        <testcase classname="src/__tests__/pages/OnboardingLogin.test.tsx" name="OnboardingLogin &gt; toggles password visibility" time="0.064291275">
+        </testcase>
+        <testcase classname="src/__tests__/pages/OnboardingLogin.test.tsx" name="OnboardingLogin &gt; has minimum 44px touch targets on all interactive elements" time="0.068257147">
+        </testcase>
+        <testcase classname="src/__tests__/pages/OnboardingLogin.test.tsx" name="OnboardingLogin &gt; has focus ring styles on interactive elements" time="0.019254019">
+        </testcase>
+        <testcase classname="src/__tests__/pages/OnboardingLogin.test.tsx" name="OnboardingLogin &gt; renders wireframe colors and layout matching design" time="0.022480268">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/pages/OrderTracking.test.tsx" timestamp="2026-10-15T16:11:45.327Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="7" failures="0" errors="0" skipped="0" time="0.491603292">
+        <testcase classname="src/__tests__/pages/OrderTracking.test.tsx" name="OrderTracking &gt; renders order heading" time="0.120921351">
+        </testcase>
+        <testcase classname="src/__tests__/pages/OrderTracking.test.tsx" name="OrderTracking &gt; displays order status badge" time="0.054244093">
+        </testcase>
+        <testcase classname="src/__tests__/pages/OrderTracking.test.tsx" name="OrderTracking &gt; displays order progress timeline" time="0.043057264">
+        </testcase>
+        <testcase classname="src/__tests__/pages/OrderTracking.test.tsx" name="OrderTracking &gt; displays order items table" time="0.079918531">
+        </testcase>
+        <testcase classname="src/__tests__/pages/OrderTracking.test.tsx" name="OrderTracking &gt; displays review form" time="0.084814156">
+        </testcase>
+        <testcase classname="src/__tests__/pages/OrderTracking.test.tsx" name="OrderTracking &gt; displays delivery agent information" time="0.029893604">
+        </testcase>
+        <testcase classname="src/__tests__/pages/OrderTracking.test.tsx" name="OrderTracking &gt; displays tracking URL" time="0.076064159">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/pages/ProfileNotifications.test.tsx" timestamp="2026-10-15T16:11:45.328Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="8" failures="0" errors="0" skipped="0" time="1.019976619">
+        <testcase classname="src/__tests__/pages/ProfileNotifications.test.tsx" name="ProfileNotifications &gt; renders account heading" time="0.22304474">
+        </testcase>
+        <testcase classname="src/__tests__/pages/ProfileNotifications.test.tsx" name="ProfileNotifications &gt; renders profile section with customer details" time="0.17219208">
+        </testcase>
+        <testcase classname="src/__tests__/pages/ProfileNotifications.test.tsx" name="ProfileNotifications &gt; renders addresses section with serviceability status" time="0.114261661">
+        </testcase>
+        <testcase classname="src/__tests__/pages/ProfileNotifications.test.tsx" name="ProfileNotifications &gt; renders notifications section with unread count" time="0.109882305">
+        </testcase>
+        <testcase classname="src/__tests__/pages/ProfileNotifications.test.tsx" name="ProfileNotifications &gt; renders notification preferences table" time="0.158612085">
+        </testcase>
+        <testcase classname="src/__tests__/pages/ProfileNotifications.test.tsx" name="ProfileNotifications &gt; renders reviews section" time="0.054940035">
+        </testcase>
+        <testcase classname="src/__tests__/pages/ProfileNotifications.test.tsx" name="ProfileNotifications &gt; renders loyalty points section" time="0.137440483">
+        </testcase>
+        <testcase classname="src/__tests__/pages/ProfileNotifications.test.tsx" name="ProfileNotifications &gt; renders tabs with notifications tab showing unread count" time="0.046457892">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/pages/ShoppingLists.test.tsx" timestamp="2026-10-15T16:11:45.329Z" hostname="sdlc-worker-prod-dc4987bbb-d86vm" tests="6" failures="0" errors="0" skipped="0" time="0.69477447">
+        <testcase classname="src/__tests__/pages/ShoppingLists.test.tsx" name="ShoppingLists &gt; renders shopping lists heading" time="0.194639724">
+        </testcase>
+        <testcase classname="src/__tests__/pages/ShoppingLists.test.tsx" name="ShoppingLists &gt; renders list tabs section with AI-generated and manual list chips" time="0.107346375">
+        </testcase>
+        <testcase classname="src/__tests__/pages/ShoppingLists.test.tsx" name="ShoppingLists &gt; renders generate list button" time="0.167891526">
+        </testcase>
+        <testcase classname="src/__tests__/pages/ShoppingLists.test.tsx" name="ShoppingLists &gt; renders list items table with product names and reason chips" time="0.045496596">
+        </testcase>
+        <testcase classname="src/__tests__/pages/ShoppingLists.test.tsx" name="ShoppingLists &gt; renders reorder reminders section" time="0.089306869">
+        </testcase>
+        <testcase classname="src/__tests__/pages/ShoppingLists.test.tsx" name="ShoppingLists &gt; renders add all to cart bar with total" time="0.087538193">
+        </testcase>
+    </testsuite>
+</testsuites>

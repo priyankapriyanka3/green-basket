@@ -1,0 +1,1 @@
+"""GreenBasket AI Backend Application"""

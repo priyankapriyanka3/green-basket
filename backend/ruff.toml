@@ -1,0 +1,4 @@
+[lint]
+# B008: FastAPI Depends() in function defaults is intentional and idiomatic
+# SIM102: Nested ifs are sometimes clearer than combined conditions
+ignore = ["B008", "SIM102"]

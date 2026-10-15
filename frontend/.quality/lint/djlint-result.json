@@ -1,0 +1,41 @@
+{
+  "tool": "djlint",
+  "status": "issues_found",
+  "errors": 1,
+  "warnings": 0,
+  "total_findings": 1,
+  "inline_findings": 1,
+  "remaining_findings": 0,
+  "files": [
+    {
+      "path": "/repos/green-basket/frontend/index.html",
+      "findings": [
+        {
+          "msg": "Consider adding a meta description. <html lang=\"en\"> <",
+          "line": 2,
+          "column": 0,
+          "code": "H030"
+        }
+      ]
+    }
+  ],
+  "report_path": "/repos/green-basket/frontend/.quality/lint/djlint-result.json",
+  "command": [
+    "/usr/local/bin/djlint",
+    "/app/data/projects/37a7d563e6e8/output/663d3b487dad/repos/green-basket/frontend",
+    "--lint"
+  ],
+  "exit_code": 1,
+  "stdout": "\n\n\nfrontend/index.html\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nH030 2:0 Consider adding a meta description. <html lang=\"en\"> <\n\nLinted 1 file, found 1 error.\n\n",
+  "stderr": "Linting 1/1 files\n",
+  "all_findings": [
+    {
+      "path": "/repos/green-basket/frontend/index.html",
+      "line": 2,
+      "column": 0,
+      "code": "H030",
+      "msg": "Consider adding a meta description. <html lang=\"en\"> <",
+      "severity": "error"
+    }
+  ]
+}

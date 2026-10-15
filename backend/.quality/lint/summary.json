@@ -1,0 +1,831 @@
+{
+  "status": "issues_found",
+  "target_path": "/repos/green-basket/backend",
+  "requested_linters": [
+    "ruff"
+  ],
+  "applicable_linters": [
+    "ruff",
+    "shellcheck",
+    "shfmt"
+  ],
+  "selected_linters": [
+    "ruff"
+  ],
+  "message": "All findings, including any findings omitted from the inline response, are available in the report files listed under `report_paths`.",
+  "summary": {
+    "errors": 237,
+    "warnings": 0,
+    "total_findings": 237,
+    "inline_findings": 100,
+    "remaining_findings": 137,
+    "linters_run": 1,
+    "linters_with_issues": 1,
+    "linters_unavailable": 0
+  },
+  "by_tool": {
+    "ruff": {
+      "status": "issues_found",
+      "errors": 237,
+      "warnings": 0,
+      "total_findings": 237,
+      "inline_findings": 100,
+      "remaining_findings": 137,
+      "files": [
+        {
+          "path": "/repos/green-basket/backend/alembic/env.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/alembic/versions/19c048dd5ba3_align_catalog_schema_with_lld.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 8,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`alembic.op` imported but unused",
+              "line": 8,
+              "column": 21,
+              "code": "F401"
+            },
+            {
+              "msg": "`sqlalchemy` imported but unused",
+              "line": 9,
+              "column": 22,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/alembic/versions/3c9a8b3dcbdb_initial_schema_with_19_tables.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 8,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/adapters/notification_provider.py",
+          "findings": [
+            {
+              "msg": "Do not catch blind exception: `Exception`",
+              "line": 66,
+              "column": 16,
+              "code": "BLE001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/addresses/services.py",
+          "findings": [
+            {
+              "msg": "Mutable default value for class attribute",
+              "line": 19,
+              "column": 33,
+              "code": "RUF012"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 147,
+              "column": 24,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 148,
+              "column": 24,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 217,
+              "column": 30,
+              "code": "DTZ003"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/database.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Unnecessary `pass` statement",
+              "line": 21,
+              "column": 5,
+              "code": "PIE790"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/errors.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `X | None` for type annotations",
+              "line": 19,
+              "column": 14,
+              "code": "UP045"
+            },
+            {
+              "msg": "Use `X | None` for type annotations",
+              "line": 30,
+              "column": 18,
+              "code": "UP045"
+            },
+            {
+              "msg": "Use `X | None` for type annotations",
+              "line": 50,
+              "column": 71,
+              "code": "UP045"
+            },
+            {
+              "msg": "Use `X | None` for type annotations",
+              "line": 56,
+              "column": 69,
+              "code": "UP045"
+            },
+            {
+              "msg": "Use `X | None` for type annotations",
+              "line": 62,
+              "column": 81,
+              "code": "UP045"
+            },
+            {
+              "msg": "Use `X | None` for type annotations",
+              "line": 68,
+              "column": 69,
+              "code": "UP045"
+            },
+            {
+              "msg": "Use `X | None` for type annotations",
+              "line": 74,
+              "column": 79,
+              "code": "UP045"
+            },
+            {
+              "msg": "Use `X | None` for type annotations",
+              "line": 80,
+              "column": 58,
+              "code": "UP045"
+            },
+            {
+              "msg": "Use `X | None` for type annotations",
+              "line": 86,
+              "column": 70,
+              "code": "UP045"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/inventory/services.py",
+          "findings": [
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 93,
+              "column": 37,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 132,
+              "column": 15,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 196,
+              "column": 50,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 209,
+              "column": 39,
+              "code": "DTZ003"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/main.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`app.database.engine` imported but unused",
+              "line": 6,
+              "column": 26,
+              "code": "F401"
+            },
+            {
+              "msg": "`app.database.Base` imported but unused",
+              "line": 6,
+              "column": 34,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/__init__.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`__all__` is not sorted",
+              "line": 19,
+              "column": 11,
+              "code": "RUF022"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/address.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/audit_log.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/category.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/customer.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/delivery_agent.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/delivery_slot.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/farmer.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/inventory.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`sqlalchemy.Numeric` imported but unused",
+              "line": 2,
+              "column": 55,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/notification.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/order.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/payment.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/product.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/promotion.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/recommendation.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/review.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/models/shopping_list.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/notifications/services.py",
+          "findings": [
+            {
+              "msg": "Do not catch blind exception: `Exception`",
+              "line": 100,
+              "column": 16,
+              "code": "BLE001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/operations/services.py",
+          "findings": [
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 93,
+              "column": 28,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 152,
+              "column": 27,
+              "code": "DTZ003"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/recommendations/routes.py",
+          "findings": [
+            {
+              "msg": "Unpacked variable `role` is never used",
+              "line": 23,
+              "column": 15,
+              "code": "RUF059"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/recommendations/services.py",
+          "findings": [
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 185,
+              "column": 34,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 240,
+              "column": 30,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 276,
+              "column": 34,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 309,
+              "column": 34,
+              "code": "DTZ003"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/shopping_lists/routes.py",
+          "findings": [
+            {
+              "msg": "Unpacked variable `role` is never used",
+              "line": 25,
+              "column": 15,
+              "code": "RUF059"
+            },
+            {
+              "msg": "Unpacked variable `role` is never used",
+              "line": 37,
+              "column": 15,
+              "code": "RUF059"
+            },
+            {
+              "msg": "Unpacked variable `role` is never used",
+              "line": 62,
+              "column": 15,
+              "code": "RUF059"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/app/shopping_lists/services.py",
+          "findings": [
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 124,
+              "column": 13,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 164,
+              "column": 40,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 165,
+              "column": 21,
+              "code": "DTZ003"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/tests/conftest.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`datetime.datetime` imported but unused",
+              "line": 4,
+              "column": 22,
+              "code": "F401"
+            },
+            {
+              "msg": "`datetime.timezone` imported but unused",
+              "line": 4,
+              "column": 32,
+              "code": "F401"
+            },
+            {
+              "msg": "`app.models.product.Product` imported but unused",
+              "line": 8,
+              "column": 32,
+              "code": "F401"
+            },
+            {
+              "msg": "`app.models.customer.Customer` imported but unused",
+              "line": 9,
+              "column": 33,
+              "code": "F401"
+            },
+            {
+              "msg": "`app.models.address.Address` imported but unused",
+              "line": 10,
+              "column": 32,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/tests/integration/conftest.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`sqlalchemy.orm.Session` imported but unused",
+              "line": 5,
+              "column": 42,
+              "code": "F401"
+            },
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 51,
+              "column": 5,
+              "code": "I001"
+            },
+            {
+              "msg": "`app.models.customer.Customer` imported but unused",
+              "line": 51,
+              "column": 37,
+              "code": "F401"
+            },
+            {
+              "msg": "`app.models.audit_log.AuditLog` imported but unused",
+              "line": 52,
+              "column": 38,
+              "code": "F401"
+            },
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 73,
+              "column": 5,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 118,
+              "column": 33,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 119,
+              "column": 33,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 144,
+              "column": 33,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 145,
+              "column": 33,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 159,
+              "column": 28,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 185,
+              "column": 28,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 224,
+              "column": 28,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 279,
+              "column": 33,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 280,
+              "column": 33,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/tests/integration/test_auth_routes.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 86,
+              "column": 5,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/tests/integration/test_bootstrap_core.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`pytest` imported but unused",
+              "line": 2,
+              "column": 8,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/green-basket/backend/tests/integration/test_bootstrap_routes.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`app.models.customer.Customer` imported but unused",
+              "line": 8,
+              "column": 33,
+              "code": "F401"
+            },
+            {
+              "msg": "`app.models.product.Product` imported but unused",
+              "line": 15,
+              "column": 32,
+              "code": "F401"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 39,
+              "column": 20,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 40,
+              "column": 20,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 51,
+              "column": 22,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 61,
+              "column": 20,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 62,
+              "column": 20,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 128,
+              "column": 20,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 129,
+              "column": 20,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 245,
+              "column": 20,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 246,
+              "column": 20,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 257,
+              "column": 22,
+              "code": "DTZ003"
+            },
+            {
+              "msg": "`datetime.datetime.utcnow()` used",
+              "line": 293,
+              "column": 25,
+              "code": "DTZ003"
+            }
+          ]
+        }
+      ],
+      "report_path": "/repos/green-basket/backend/.quality/lint/ruff-result.json",
+      "truncated": true
+    }
+  },
+  "report_dir": "/repos/green-basket/backend/.quality/lint",
+  "report_paths": {
+    "summary": "/repos/green-basket/backend/.quality/lint/summary.json",
+    "ruff": "/repos/green-basket/backend/.quality/lint/ruff-result.json"
+  },
+  "truncated": true
+}
